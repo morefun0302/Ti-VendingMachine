@@ -26,8 +26,6 @@ $.item.name = args.item.name;
 
 // handle clicks
 function itemClicked(e) {
-	Ti.API.info("vendItem clicked: " + JSON.stringify(e.source));
-
 	// pass item name to function
 	args.click(e.source.name);
 }
