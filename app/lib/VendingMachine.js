@@ -60,8 +60,8 @@ VendingMachine.prototype.switchMode = function(mode) {
         default:
             alert("invalid mode set");
             break;
-    } 
-}
+    }
+};
 
 //
 VendingMachine.prototype.vend = function(item, success, error) {
@@ -92,21 +92,21 @@ VendingMachine.prototype.vend = function(item, success, error) {
 
     //
     success(coinBalance, stock);
-}
+};
 
 //
 VendingMachine.prototype.coin = {
     insert: insertCoin,
     eject: ejectCoins,
-    balance: (function(){ return coinBalance }())
-}
+    balance: (function(){ return coinBalance; }())
+};
 
 //
 VendingMachine.prototype.stock = {
     add: addStock,
     remove: removeStock,
-    levels: (function(){ return stock }())
-}
+    levels: (function(){ return stock; }())
+};
 
 //
 function insertCoin(coin) {

@@ -151,7 +151,7 @@ function generateStockItems(stock) {
 	_.each(stock, function(item, index) {
 		// found matching item to set height parameter
 		var itemMatch = _.find(stockItemArgs, function(args) {
-			return item.name == args.name
+			return item.name == args.name;
 		});
 		
 		// create vending item controller
@@ -168,7 +168,7 @@ function generateStockItems(stock) {
 
 		// add view to wrapper
 		$.itemWrapper.add(vendItem.getView());
-	})
+	});
 }
 
 //

@@ -20,9 +20,9 @@ Alloy.Globals.machine = new VendingMachine();
 // helper to validate variable is a number
 Alloy.Globals.isNumber = function(n) {
 	return !isNaN(parseFloat(n)) && isFinite(n);
-}
+};
 
 // helper to format a number to pounds sterling currency
 Alloy.Globals.formatSterling = function(n) {
 	return "\u20a4" + parseFloat(Math.round(n * 100) / 100).toFixed(2);
-}
+};
