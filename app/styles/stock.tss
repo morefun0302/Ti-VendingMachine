@@ -1,0 +1,11 @@
+".container": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: "white"
+}
+
+"#machine": {
+	width: 180,
+	height: 339,
+	backgroundImage: "images/stock.png"
+}

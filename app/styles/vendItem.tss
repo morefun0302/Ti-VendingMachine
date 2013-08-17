@@ -1,0 +1,47 @@
+"#vendItem": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	left: 0
+}
+
+"#stockLevel": {
+	width: 60,
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	},
+	textAlign: "left"
+}
+
+".itemLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "black",
+	backgroundColor: "white",
+	touchEnabled: false
+}
+
+".itemBg": {
+	opacity: 0.3,
+	backgroundColor: "green",
+	touchEnabled: false
+}
+
+"#title": {
+	left: 3,
+	bottom: 3,
+	font: {
+		fontSize: 18,
+		fontWeight: "bold"
+	}
+}
+
+"#price": {
+	right: 3,
+	top: 3,
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
+	}
+}

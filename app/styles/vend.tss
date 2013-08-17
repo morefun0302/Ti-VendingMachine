@@ -1,0 +1,154 @@
+"#container": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: "white"
+}
+
+"#machineWrapper": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+
+"#machine": {
+	width: 180,
+	height: 343,
+	backgroundImage: "images/machine.png"
+}
+
+"#coinSlot": {
+	width: 26,
+	height: 108,
+	top: 52,
+	right: 49,
+	opacity: 0.3,
+	backgroundColor: "green"
+}
+
+"#itemWrapper": {
+	width: 267,
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	top: 15,
+	left: 0
+}
+
+".balance": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: "center",
+	font: {
+		fontSize: 28,
+		fontWeight: "bold"
+	},
+	color: "red",
+	text: "0.00"
+}
+
+"#coinBalance": {
+	bottom: 13
+}
+
+"#coinSlotOverlayWrapper": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	visible: false
+}
+
+"#coinSlotOverlayBg": {
+	opacity: 0.7,
+	backgroundColor: "black"
+}
+
+"#coinSlotOverlay": {
+	width: 290,
+	height: 290,
+	backgroundImage: "images/coins.png",
+	bubbleParent: false
+}
+
+"#coinSlotOverlayBalance": {
+	width: Ti.UI.SIZE,
+	top: 4,
+	left: 10,
+	textAlign: "left",
+}
+
+"#coinEject": {
+	width: 32,
+	height: 85,
+	right: 112,
+	top: 14,
+	backgroundColor: "green",
+	opacity: 0.4
+}
+
+".coin": {
+	//backgroundColor: "red",
+	//opacity: 0.4,
+	//bottom: 10,
+	//left: 10
+}
+
+"#coin1p": {
+	width: 53,
+	height: 53,
+	left: 4,
+	top: 155,
+	coinValue: 0.01
+}
+
+"#coin2p": {
+	width: 65,
+	height: 65,
+	left: 71,
+	top: 149,
+	coinValue: 0.02
+}
+
+"#coin5p": {
+	width: 47,
+	height: 47,
+	left: 154,
+	top: 158,
+	coinValue: 0.05
+}
+
+"#coin10p": {
+	width: 62,
+	height: 62,
+	left: 219,
+	top: 151,
+	coinValue: 0.10
+}
+
+"#coin20p": {
+	width: 55,
+	height: 55,
+	left: 4,
+	bottom: 11,
+	coinValue: 0.20
+}
+
+"#coin50p": {
+	width: 69,
+	height: 69,
+	left: 67,
+	bottom: 4,
+	coinValue: 0.50
+}
+
+"#coin1pound": {
+	width: 58,
+	height: 58,
+	left: 149,
+	bottom: 10,
+	coinValue: 1.00
+}
+
+"#coin2pound": {
+	width: 71,
+	height: 71,
+	left: 216,
+	bottom: 2,
+	coinValue: 2.00
+}

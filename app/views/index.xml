@@ -1,0 +1,10 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Vend" icon="KS_nav_ui.png">
+			<Require type="view" src="vend" />
+		</Tab>
+		<Tab title="Stock" icon="KS_nav_views.png">
+			<Require type="view" src="stock" />
+		</Tab>
+	</TabGroup>
+</Alloy>

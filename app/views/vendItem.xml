@@ -1,0 +1,10 @@
+<Alloy>
+	<View>
+		<Label id="stockLevel" />
+		<View id="item" class="item" onClick="itemClicked">
+			<View id="bg" class="itemBg" />
+			<Label id="title" class="itemLabel" />
+			<Label id="price" class="itemLabel" />
+		</View>
+	</View>
+</Alloy>

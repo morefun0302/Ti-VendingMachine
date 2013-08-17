@@ -1,0 +1,8 @@
+<Alloy>
+	<Window title="Stock Machine" onFocus="switchMode">
+		<View class="container">
+			<View id="machine">
+			</View>
+		</View>
+	</Window>
+</Alloy>

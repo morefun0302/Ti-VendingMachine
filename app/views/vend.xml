@@ -1,0 +1,30 @@
+<Alloy>
+	<Window title="Ready to Vend" onFocus="windowFocused" onOpen="windowOpened">
+		<View id="container">
+			<View id="machineWrapper">
+				<View id="machine">
+					<Label id="coinBalance" class="balance" />
+				</View>
+				<View id="itemWrapper">
+						<!-- stock items added programatically -->
+				</View>
+				<View id="coinSlot" onClick="showCoinSlot" />
+			</View>
+			<View id="coinSlotOverlayWrapper" onClick="hideCoinSlot">
+				<View id="coinSlotOverlayBg" />
+				<View id="coinSlotOverlay">
+					<View id="coin1p" class="coin" onClick="insertCoin" />
+					<View id="coin2p" class="coin" onClick="insertCoin" />
+					<View id="coin5p" class="coin" onClick="insertCoin" />
+					<View id="coin10p" class="coin" onClick="insertCoin" />
+					<View id="coin20p" class="coin" onClick="insertCoin" />
+					<View id="coin50p" class="coin" onClick="insertCoin" />
+					<View id="coin1pound" class="coin" onClick="insertCoin" />
+					<View id="coin2pound" class="coin" onClick="insertCoin" />
+					<Label id="coinSlotOverlayBalance" class="balance" />
+					<View id="coinEject" onClick="ejectCoins" />
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>
