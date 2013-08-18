@@ -7,5 +7,5 @@
 "#machine": {
 	width: 180,
 	height: 339,
-	backgroundImage: "images/stock.png"
+	backgroundImage: "/images/stock.png"
 }

@@ -17,6 +17,8 @@
     <analytics>true</analytics>
     <guid>677e6f9b-4a96-4adb-a317-4adaeb43fcf8</guid>
     <property name="ti.ui.defaultunit" type="string">system</property>
+    <property name="ti.android.fastdev" type="bool">false</property>
+    <property name="ti.android.bug2373.finishfalseroot" type="bool">true</property>
     <iphone>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>

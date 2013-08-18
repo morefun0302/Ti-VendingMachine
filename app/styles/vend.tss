@@ -12,7 +12,7 @@
 "#machine": {
 	width: 180,
 	height: 343,
-	backgroundImage: "images/machine.png"
+	backgroundImage: "/images/machine.png"
 }
 
 "#coinSlot": {
@@ -62,7 +62,7 @@
 "#coinSlotOverlay": {
 	width: 290,
 	height: 290,
-	backgroundImage: "images/coins.png",
+	backgroundImage: "/images/coins.png",
 	bubbleParent: false
 }
 
@@ -83,10 +83,7 @@
 }
 
 ".coin": {
-	//backgroundColor: "red",
-	//opacity: 0.4,
-	//bottom: 10,
-	//left: 10
+	
 }
 
 "#coin1p": {
