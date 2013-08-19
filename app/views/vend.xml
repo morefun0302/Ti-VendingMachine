@@ -1,6 +1,6 @@
 <Alloy>
 	<Window title="Ready to Vend" onFocus="windowFocused" onOpen="windowOpened">
-		<View id="container">
+		<View class="container">
 			<View id="machineWrapper">
 				<View id="machine">
 					<Label id="coinBalance" class="balance" />
@@ -22,6 +22,7 @@
 					<View id="coin1pound" class="coin" onClick="insertCoin" />
 					<View id="coin2pound" class="coin" onClick="insertCoin" />
 					<Label id="coinSlotOverlayBalance" class="balance" />
+					<Button id="coinSlotOverlayClose" onClick="hideCoinSlot">Close</Button>
 					<View id="coinEject" onClick="ejectCoins" />
 				</View>
 			</View>

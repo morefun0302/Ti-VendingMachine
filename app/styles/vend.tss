@@ -1,12 +1,12 @@
-"#container": {
+".container": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	backgroundColor: "white"
 }
 
 "#machineWrapper": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE
+	width: 266,
+	height: 343
 }
 
 "#machine": {
@@ -26,7 +26,7 @@
 
 "#itemWrapper": {
 	width: 267,
-	height: Ti.UI.SIZE,
+	height: 360,
 	layout: "vertical",
 	top: 15,
 	left: 0
@@ -68,9 +68,16 @@
 
 "#coinSlotOverlayBalance": {
 	width: Ti.UI.SIZE,
-	top: 4,
+	top: 65,
 	left: 10,
 	textAlign: "left",
+}
+
+"#coinSlotOverlayClose": {
+	width: 80,
+	height: 42,
+	top: 10,
+	left: 10
 }
 
 "#coinEject": {

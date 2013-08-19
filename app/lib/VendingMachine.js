@@ -1,10 +1,11 @@
 /**
+ * Simple Vending Machine Library
  * @author Julian Fraser
  */
 
 
 
-//
+// create the library object
 function VendingMachine() {
     if(false === (this instanceof VendingMachine)) {
         return new VendingMachine();
@@ -47,9 +48,9 @@ var modes = {
 // suedo-constants for machine mode
 VendingMachine.prototype.modes = modes;
 
-//
+// function handling switching between machine modes
 VendingMachine.prototype.switchMode = function(mode) {
-    //
+    // 
     switch(mode) {
         case modes.VEND:
             activeMode = mode;
@@ -63,12 +64,12 @@ VendingMachine.prototype.switchMode = function(mode) {
     }
 };
 
-//
+// function handles vending an item, adjusting stock and coin balance
 VendingMachine.prototype.vend = function(item, success, error) {
     //
     var stockItem = _.find(stock, function(i){ return item === i.name; });
 
-    //
+    // return error if item is out of stock
     if (stockItem.qty < 1) {
         error({
             message: "Out of stock"
@@ -76,7 +77,7 @@ VendingMachine.prototype.vend = function(item, success, error) {
         return false;
     }
 
-    //
+    // return error if insufficient coin balance
     if (stockItem.price > coinBalance) {
         error({
             message: "Please insert more coins to make this purchase"
@@ -87,28 +88,28 @@ VendingMachine.prototype.vend = function(item, success, error) {
     // remove 1 item from stock
     removeStock(item, 1);
 
-    //
+    // adjust coin balance by subtracting item price
     coinBalance = (coinBalance - stockItem.price).toFixed(2);
 
-    //
+    // return the success function
     success(coinBalance, stock);
 };
 
-//
+// object handing coin balance and functions
 VendingMachine.prototype.coin = {
     insert: insertCoin,
     eject: ejectCoins,
     balance: (function(){ return coinBalance; }())
 };
 
-//
+// object handling stock level and functions
 VendingMachine.prototype.stock = {
     add: addStock,
     remove: removeStock,
     levels: (function(){ return stock; }())
 };
 
-//
+// inserts a coin into machine
 function insertCoin(coin) {
     Ti.API.info('Inserting coin: ' + coin);
 
@@ -138,10 +139,10 @@ function bankCoin() {
 
 //
 function giveChange() {
-
+	// TODO: implement giveChange function to handle giving change back to the customer
 }
 
-//
+// add stock to machine
 function addStock(item, qty) {
     // get reference to the correct object in stock array
     var stockItem = _.find(stock, function(i){ return item === i.name; });
@@ -150,7 +151,7 @@ function addStock(item, qty) {
     stockItem.qty += qty;
 }
 
-//
+// remove stock from machine
 function removeStock(item, qty) {
     // get reference to the correct object in stock array
     var stockItem = _.find(stock, function(i){ return item === i.name; });

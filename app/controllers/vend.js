@@ -97,12 +97,14 @@ function setDisplayStock(stock) {
 		if (item.qty > 0) {
 			// there is stock
 			itemControl.bg.backgroundColor = "green";
+			itemControl.bg.opacity = 0.3;
 			itemControl.stockLevel.color = "black";
 
 			Ti.API.info("there is stock");
 		} else {
 			// out of stock
 			itemControl.bg.backgroundColor = "red";
+			itemControl.bg.opacity = 0.3;
 			itemControl.stockLevel.color = "red";
 			
 			Ti.API.info("no stock");
@@ -118,7 +120,6 @@ function ejectCoins() {
 	// set text of balance labels
 	setDisplayBalance(coinBalance);
 }
-
 
 // runs on window focus
 function windowFocused() {
@@ -163,11 +164,13 @@ function generateStockItems(stock) {
 			click: purchaseItem
 		});
 
-		// add controller to array so we can search and manipulate later
-		stockItemControllers.push(vendItem);
+		Ti.API.info("vendItem is: " + vendItem);
 
 		// add view to wrapper
 		$.itemWrapper.add(vendItem.getView());
+
+		// add controller to array so we can search and manipulate later
+		stockItemControllers.push(vendItem);
 	});
 }
 

@@ -10,6 +10,10 @@
 var args = arguments[0] || {};
 
 // set item dimensions
+$.vendItem.width = args.width + $.stockLevel.width;
+$.vendItem.height = args.height;
+
+// set item dimensions
 $.item.width = args.width;
 $.item.height = args.height;
 
