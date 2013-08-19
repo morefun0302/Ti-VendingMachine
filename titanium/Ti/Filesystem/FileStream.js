@@ -1,0 +1,1 @@
+define(["Ti/_/declare","Ti/IOStream"],function(e,t){return e("Ti.Filesystem.Filestream",t)});

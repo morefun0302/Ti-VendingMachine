@@ -1,0 +1,1 @@
+var Alloy=require("alloy"),_=Alloy._,Backbone=Alloy.Backbone,VendingMachine=require("VendingMachine");Alloy.Globals.machine=new VendingMachine,Alloy.Globals.isNumber=function(e){return!isNaN(parseFloat(e))&&isFinite(e)},Alloy.Globals.formatSterling=function(e){return"₤"+parseFloat(Math.round(100*e)/100).toFixed(2)},Alloy.createController("index");

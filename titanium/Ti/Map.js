@@ -1,0 +1,1 @@
+define(["Ti/_/Evented","Ti/_/lang"],function(e,t){return t.setObject("Ti.Map",e,{constants:{ANNOTATION_GREEN:1,ANNOTATION_PURPLE:2,ANNOTATION_RED:0,HYBRID_TYPE:2,SATELLITE_TYPE:1,STANDARD_TYPE:0,TERRAIN_TYPE:3},createAnnotation:function(e){return new(require("Ti/Map/Annotation"))(e)},createView:function(e){return new(require("Ti/Map/View"))(e)}})});

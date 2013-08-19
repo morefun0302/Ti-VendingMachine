@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+provisioning_profiles/development/72FAF064-9BD5-4501-840A-B401965B3905/appid=*
+provisioning_profiles/development/72FAF064-9BD5-4501-840A-B401965B3905/name=iOS Team Provisioning Profile\: iOS Wildcard App ID
+provisioning_profiles/development/72FAF064-9BD5-4501-840A-B401965B3905/uuid=72FAF064-9BD5-4501-840A-B401965B3905
+provisioning_profiles/development/8569B79D-093F-4A41-83E1-04A93599793C/appid=com.picfari.app
+provisioning_profiles/development/8569B79D-093F-4A41-83E1-04A93599793C/name=Picfari Dev
+provisioning_profiles/development/8569B79D-093F-4A41-83E1-04A93599793C/uuid=8569B79D-093F-4A41-83E1-04A93599793C
+provisioning_profiles/development/929FCE50-1A7F-4D23-9C09-23B24E5CF81E/appid=com.*
+provisioning_profiles/development/929FCE50-1A7F-4D23-9C09-23B24E5CF81E/name=Wildcard Dev
+provisioning_profiles/development/929FCE50-1A7F-4D23-9C09-23B24E5CF81E/uuid=929FCE50-1A7F-4D23-9C09-23B24E5CF81E

@@ -1,0 +1,1 @@
+define(["Ti/_/declare","Ti/_/Evented"],function(e,t){return e("Ti.Media.AudioPlayer",t,{})});

@@ -1,0 +1,1 @@
+define(function(){return{normalize:function(t){return t},load:function(t,e,i){var n=new Image;n.onload=n.onerror=function(){i(n),delete n.onload,delete n.onerror},n.src=e.toUrl(t)}}});

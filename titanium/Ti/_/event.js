@@ -1,0 +1,1 @@
+define({stop:function(t){t&&(t.preventDefault&&t.preventDefault(),t.stopPropagation&&t.stopPropagation())},off:function(t){for(var e,t=require.is(t,"Array")?t:[t],i=0,n=t.length;n>i;)(e=t[i++])&&e();t.splice(0)}});
