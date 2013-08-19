@@ -12,8 +12,6 @@ function showCoinSlot() {
 
 // handles inserting of coin into machine
 function insertCoin(e) {
-	//Ti.API.info("insert coin: " + JSON.stringify(e));
-
 	Ti.API.info("coin value: " + e.source.coinValue);
 
 	var coinValue = e.source.coinValue;
@@ -81,9 +79,9 @@ function setDisplayBalance(balance) {
 	$.coinSlotOverlayBalance.text = prettyBalance;
 }
 
-//
+// handles setting stock level labels and styling
 function setDisplayStock(stock) {
-	//
+	// loop through each stock item
 	_.each(stock, function(item, index) {
 		// find matching 
 		var itemControl = _.find(stockItemControllers, function(controller, index) {
@@ -99,15 +97,11 @@ function setDisplayStock(stock) {
 			itemControl.bg.backgroundColor = "green";
 			itemControl.bg.opacity = 0.3;
 			itemControl.stockLevel.color = "black";
-
-			Ti.API.info("there is stock");
 		} else {
 			// out of stock
 			itemControl.bg.backgroundColor = "red";
 			itemControl.bg.opacity = 0.3;
 			itemControl.stockLevel.color = "red";
-			
-			Ti.API.info("no stock");
 		}
 	});
 }
@@ -124,6 +118,9 @@ function ejectCoins() {
 // runs on window focus
 function windowFocused() {
 	vm.switchMode(vm.modes.VEND);
+
+	// display stock levels
+	setDisplayStock(vm.stock.levels);
 }
 
 // runs once on window initial load
@@ -163,9 +160,7 @@ function generateStockItems(stock) {
 			item: item,
 			click: purchaseItem
 		});
-
-		Ti.API.info("vendItem is: " + vendItem);
-
+		
 		// add view to wrapper
 		$.itemWrapper.add(vendItem.getView());
 
@@ -174,7 +169,7 @@ function generateStockItems(stock) {
 	});
 }
 
-//
+// handles window open event
 function windowOpened() {
 	// reset the balance on initial load
 	ejectCoins();

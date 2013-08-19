@@ -1,7 +1,19 @@
 <Alloy>
-	<Window title="Stock Machine">
+	<Window title="Stock Machine" onFocus="windowFocused" onOpen="windowOpened">
 		<View class="container">
-			<View id="machine">
+			<View id="machineWrapper">
+				<View id="machine" />
+				<View id="itemWrapper">
+						<!-- stock items added programatically -->
+				</View>
+			</View>
+			<View id="stockOverlayWrapper" onClick="hideStockOverlay">
+				<View id="stockOverlayBg" />
+				<View id="stockOverlay">
+					<Label id="stockTitle" />
+					<Slider id="stockSlider" />
+					<Label id="stockLevel" />
+				</View>
 			</View>
 		</View>
 	</Window>

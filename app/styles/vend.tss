@@ -26,7 +26,7 @@
 
 "#itemWrapper": {
 	width: 267,
-	height: 360,
+	height: 340,
 	layout: "vertical",
 	top: 15,
 	left: 0

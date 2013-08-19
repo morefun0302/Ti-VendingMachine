@@ -1,11 +1,71 @@
 ".container": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	backgroundColor: "white"
+	backgroundColor: "black"
+}
+
+"#machineWrapper": {
+	width: 292,
+	height: 339
 }
 
 "#machine": {
 	width: 180,
 	height: 339,
-	backgroundImage: "/images/stock.png"
+	backgroundImage: "/images/stock.png",
+	borderColor: "white",
+	borderWidth: 2
+}
+
+"#itemWrapper": {
+	width: 292,
+	height: 339,
+	layout: "vertical",
+	top: 4,
+	left: 0
+}
+
+"#stockOverlayWrapper": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	visible: false
+}
+
+"#stockOverlayBg": {
+	opacity: 0.7,
+	backgroundColor: "black"
+}
+
+"#stockOverlay": {
+	width: 280,
+	height: 180,
+	backgroundColor: "white",
+	borderRadius: 8,
+	layout: "vertical",
+	bubbleParent: false
+}
+
+"#stockTitle": {
+	top: 16,
+	textAlign: "center",
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	}
+}
+
+"#stockLevel": {
+	top: 16,
+	textAlign: "center",
+	font: {
+		fontSize: 36,
+		fontWeight: "bold"
+	},
+}
+
+"#stockSlider": {
+	top: 20,
+	min: 0,
+	max: 48,
+	width: 250
 }
